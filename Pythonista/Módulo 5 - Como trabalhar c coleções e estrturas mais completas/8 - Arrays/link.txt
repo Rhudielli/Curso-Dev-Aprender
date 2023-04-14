@@ -1,0 +1,3 @@
+Link
+    Documentação para Arrays
+    https://docs.python.org/pt-br/3.7/library/array.html

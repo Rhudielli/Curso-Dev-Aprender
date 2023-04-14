@@ -1,0 +1,20 @@
+Name: Nome da chamada
+
+Use as
+	Data: Acessar a chamada via Get data from a external API
+	Action: Acessar a chamada via Ação, Workflow
+
+Data type (Resposta)
+	JSON
+    XML
+    Image
+    Number
+    Text
+    File
+    Empty
+
+Tipo de chamada
+    GET: Buscar dados
+    POST: Postar/enviar dados
+    PUT/PATCH: Editar dados
+    DELETE: Deletar dados
