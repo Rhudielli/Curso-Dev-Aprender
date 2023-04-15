@@ -1,0 +1,1 @@
+['Maça', 'Banana', 'Manga', 'Melancia', 'Pera']AzulAmareloLaranjaVerdeVermelho
