@@ -7,6 +7,7 @@ import logging
     # error = Um erro ocorreu na aplicação
     # critical = Um erro com consequencias graves acaba de ocorrer na aplicação
 
+logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='a', format='%(levelname)s - %(message)s') # Setar o nível
 logging.debug('Logging nivel critical')
 logging.info('Logging nivel critical')
 logging.warning('Logging nivel critical')
