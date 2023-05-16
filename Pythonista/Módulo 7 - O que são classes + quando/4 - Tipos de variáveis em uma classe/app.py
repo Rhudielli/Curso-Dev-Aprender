@@ -17,4 +17,4 @@ print(computador.sistema_operacional)
 
 Computador.sistema_operacional = 'Mac'
 computador2 = Computador('Asus', '2gb', 'ATI')
-print(computador2.sistema_operacional)  
+print(computador2.sistema_operacional)

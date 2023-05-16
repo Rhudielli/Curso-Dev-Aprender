@@ -1,4 +1,4 @@
-velocidade_internet = 10
+""" velocidade_internet = 10
 print(velocidade_internet)
 
 # Quais os tipos de dados que podemos armazenar na memória do computador?
@@ -38,4 +38,4 @@ variavel_4 = 15
 print(type(variavel_1))
 print(type(variavel_2))
 print(type(variavel_3))
-print(type(variavel_4))
+print(type(variavel_4)) """
