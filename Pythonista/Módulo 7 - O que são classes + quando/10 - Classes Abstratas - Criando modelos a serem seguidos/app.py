@@ -25,13 +25,3 @@ camera_profissional.definir_tamanho_lente(5)
 # Os métodos iram receber um número que representa o quanto de claridade deve ser aumentado ou diminuido ao chamar eles.
 
 # Após ter criado a classe abstrata, crie uma nova classe chamada de MonitorFullHD e coloque a implementaçãodos metodos aumentar_claridade e reduzir_claridade dentro deles.
-
-print(
-    f'{technology} are development technologies for creating {browser} and {phone} {result}, with {tool} tools.'
-)
-
-print(
-    'Olá, sou Isaque Rhudielli Farina Grassiotto de Oliveira, tenho 22 anos, sou desenvolvedor web, mobile e rpa, moro em Curitiba, Paraná, Brasil'
-)
-
-iiisaque rhudielli farinabsubebbw
