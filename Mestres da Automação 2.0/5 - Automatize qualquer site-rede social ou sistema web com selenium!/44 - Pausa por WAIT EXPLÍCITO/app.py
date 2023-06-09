@@ -1,19 +1,20 @@
+import time
+import schedule
 from time import sleep
 from selenium import webdriver
-from selenium.webdriver import ActionChains
+from selenium.common.exceptions import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.select import Select
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import *
-from selenium.webdriver.support import expected_conditions as condicao_esperada
-
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support import expected_conditions as uc
+from selenium.webdriver.chrome.service import Service as ChromeService
 
 def iniciar_driver():
     chrome_options = Options()
-    arguments = ['--lang=pt-BR', '--window-size=800,800', '--incognito']
+    arguments = ['--lang=pt-BR', '--window-size=800,850', '--incognito']
     for argument in arguments:
         chrome_options.add_argument(argument)
 
@@ -32,27 +33,28 @@ def iniciar_driver():
         poll_frequency=1,
         ignored_exceptions=[
             NoSuchElementException,
-            ElementNotVisibleException,
+            ElementNotSelectableException,
             ElementNotSelectableException
         ]
     )
 
     return driver, wait
 
-# Link selenium - https://selenium-python.readthedocs.io/api.html#module-selenium.common.exceptions
-
+#driver.maximize_window()
 driver, wait = iniciar_driver()
-# driver.implicitly_wait(10)
-""" driver.get('http://google.com/flights')
 
-sugestoes_voo = wait.until(condicao_esperada.visibility_of_any_elements_located((By.XPATH, '//div[@class="EWmqCb cl7p6d whkpce"]')))
-sugestoes_voo = driver.find_elements(By.XPATH, "//div[@class='wIuJz']")
-sugestoes_voo[0].click() """
+driver.get('https://www.google.com/travel/flights')
 
-# outro uso
-driver.get('https://cursoautomacao.netlify.app/login.html')
-campo_email = wait.until(condicao_esperada.element_to_be_clickable((By.XPATH, '//input[@id="email"]')))
-campo_email.send_keys('isaque@gmail.com')
+
+
+""" voo = wait.until(uc.visibility_of_element_located((By.XPATH, '')))
+
+voo = driver.find_element(By.XPATH,'')
+
+voo = wait.until(uc.visibility_of_any_elements_located((By.XPATH, '//*[@id="yDmH0d"]/c-wiz[2]/div/div[2]/c-wiz/div[1]/c-wiz/div[2]/div[2]/div/div/div[2]/div[1]/div/div[2]/ol/li[1]/div/div[1]'))) """
+
+voo = wait.until(uc.element_to_be_clickable((By.XPATH, '')))
+
+voo.click()
 
 input('')
-driver.close()

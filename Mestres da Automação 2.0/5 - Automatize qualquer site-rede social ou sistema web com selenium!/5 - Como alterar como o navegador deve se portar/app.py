@@ -10,7 +10,7 @@ from selenium.webdriver.chrome.options import Options
 --lang=pt-BR # Define o idioma de inicialização, # en-US , pt-BR
 --incognito # Usar o modo anônimo
 --window-size=800,800 # Define a resolução da janela em largura e altura
---headless # Roda em segundo plano(com a janela fechada)
+'--headless' # Roda em segundo plano(com a janela fechada)
 --disable-notifications # Desabilita notificações
 --disable-gpu # Desabilita renderização com GPU
 '''
